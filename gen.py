@@ -10,6 +10,7 @@ supported_nets = ["mainnet", "testnet", "regtest"]
 def main():
   options = get_args()
 
+  net = get_net(options)
 
   input_script  = create_input_script(options.timestamp)
   output_script = create_output_script(options.pubkey)
